@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff7accc8"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/gamePanelContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="50dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gamePanelContainer"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" 
+        android:layout_alignLeft="@id/gamePanelContainer"
+        android:layout_alignRight="@id/gamePanelContainer">
+
+        <Button
+            android:id="@+id/autoRun"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:text="自动"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/random"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:text="重置"
+            android:layout_weight="1" />
+
+        <!-- <Button
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂停" />
+
+        <Button
+            android:id="@+id/autoRun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="继续" /> -->
+    </LinearLayout>
+
+</RelativeLayout>
